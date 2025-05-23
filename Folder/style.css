@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.input-group input {
+  padding: 5px;
+  width: 60px;
+  font-size: 16px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#timer {
+  font-size: 48px;
+  margin-top: 20px;
+  color: #333;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desktop Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Set Timer</h1>
+
+    <div class="input-group">
+      <label>Hours: <input type="number" id="hours" min="0" value="0" /></label>
+      <label>Minutes: <input type="number" id="minutes" min="0" max="59" value="0" /></label>
+      <label>Seconds: <input type="number" id="seconds" min="0" max="59" value="0" /></label>
+    </div>
+
+    <div class="buttons">
+      <button onclick="startCountdown()">Start</button>
+      <button onclick="pauseCountdown()" id="pauseBtn">Pause</button>
+      <button onclick="resetCountdown()">Reset</button>
+    </div>
+
+    <p id="timer">0h 0m 0s</p>
+
+    <!-- Sound Alert -->
+    <audio id="alarmSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
